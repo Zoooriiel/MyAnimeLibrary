@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Soft light aqua-blue background */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #000c0c; /* Darker Aqua-Blue for the title */
+}
+
+/* Add Anime Button Styles - Below the Title */
+.anime-list {
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+#addAnimeBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;; /* Aqua Blue Button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px; /* Rounded edges for the button */
+}
+
+#addAnimeBtn:hover {
+    background-color: #10196b;; /* Darker aqua-blue for hover effect */
+}
+
+/* Table Styles */
+#animeListTable {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+/* Column Widths */
+th:nth-child(1), td:nth-child(1) { /* Index */
+    width: 5%;
+}
+
+th:nth-child(2), td:nth-child(2) { /* Title */
+    width: 40%;
+}
+
+th:nth-child(3), td:nth-child(3),
+th:nth-child(4), td:nth-child(4) {
+    width: 15%;
+}
+
+th:nth-child(5), td:nth-child(5) { /* Completion Date */
+    width: 15%;
+}
+
+th:nth-child(6), td:nth-child(6) { /* Actions */
+    width: 10%;
+}
+
+/* Form Modal Styling */
+#animeFormContainer {
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* Title Align to Left */
+#animeFormContainer h3 {
+    text-align: left;
+    margin-bottom: 15px;
+    color: #007a7a; /* Darker Aqua Blue */
+}
+
+/* Form Row: label + input */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.edit-link {
+    color: #1400a9; /* Aqua Blue color */
+    cursor: pointer;
+}
+
+/* Hover effect for the Edit link */
+.edit-link:hover {
+    color: #005ad8; /* Darker Aqua Blue on hover */
+    text-decoration: none; /* Remove underline on hover for a clean look */
+}
+
+/* Label Styles */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    width: 30%;
+    text-align: left;
+}
+
+/* Input Styles */
+input[type="text"], input[type="number"], input[type="date"], select {
+    width: 65%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f7f7; /* Light aqua background for inputs */
+}
+
+/* Smaller width for Status Dropdown */
+#status {
+    width: 35%;
+}
+
+/* Smaller Episodes Watched input */
+input[type="number"] {
+    width: 80px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* Button Styles inside Form */
+#submitBtn, #deleteBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #080f4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px; /* Rounded button edges */
+}
+
+#deleteBtn {
+    background-color: #d01b1b;
+}
+
+#submitBtn:hover, #deleteBtn:hover {
+    background-color: #111c7e;; /* Darker shade on hover */
+}
+
+#closeModalBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}

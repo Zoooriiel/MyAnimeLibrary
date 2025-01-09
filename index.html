@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anime List</title>
+</head>
+<body>
+
+    <div class="anime-list">
+        <h2>My Anime Library</h2>
+        <button id="addAnimeBtn">Add Anime</button>
+    </div>
+
+    <!-- Anime List Table -->
+    <table id="animeListTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Episodes</th>
+                <th>Status</th>
+                <th>Completion Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Add Anime Form Modal -->
+    <div id="animeFormContainer" class="hidden">
+        <h3 id="modal-text">Add Anime</h3>
+        <form>
+            <div class="form-row">
+                <label for="title">Anime Title:</label>
+                <input type="text" id="title" required />
+            </div>
+            <div class="form-row">
+                <label for="episodes">Episodes Watched:</label>
+                <input type="number" id="episodes" min="0" max="100" step="1" value="0" required style="width: 80px;" />
+            </div>
+            <div class="form-row">
+                <label for="status">Status:</label>
+                <select id="status" required>
+                    <option value="Watching">Watching</option>
+                    <option value="Completed">Completed</option>
+                    <option value="On Hold">On Hold</option>
+                    <option value="Dropped">Dropped</option>
+                    <option value="Plan To Watch">Plan to Watch</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="dateOfCompletion">Completion Date:</label>
+                <input type="date" id="dateOfCompletion" />
+            </div>
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="deleteBtn">Delete</button>
+        </form>
+        <button id="closeModalBtn">X</button>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
