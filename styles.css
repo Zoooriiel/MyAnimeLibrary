@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,16 +5,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9; /* Soft light aqua-blue background */
+    background-color: #f9f9f9;
 }
 
 h2 {
     font-size: 2rem;
     margin-top: 20px;
-    color: #000c0c; /* Darker Aqua-Blue for the title */
+    color: #040723;
 }
 
-/* Add Anime Button Styles - Below the Title */
 .anime-list {
     margin-top: 20px;
     width: 80%;
@@ -25,19 +23,18 @@ h2 {
 #addAnimeBtn {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #000000;; /* Aqua Blue Button */
+    background-color: #080f4a;; 
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 20px;
-    border-radius: 5px; /* Rounded edges for the button */
+    border-radius: 5px;
 }
 
 #addAnimeBtn:hover {
-    background-color: #10196b;; /* Darker aqua-blue for hover effect */
+    background-color: #10196b;; 
 }
 
-/* Table Styles */
 #animeListTable {
     width: 80%;
     border-collapse: collapse;
@@ -50,12 +47,11 @@ th, td {
     border: 1px solid #ccc;
 }
 
-/* Column Widths */
-th:nth-child(1), td:nth-child(1) { /* Index */
+th:nth-child(1), td:nth-child(1) { 
     width: 5%;
 }
 
-th:nth-child(2), td:nth-child(2) { /* Title */
+th:nth-child(2), td:nth-child(2) { 
     width: 40%;
 }
 
@@ -64,15 +60,14 @@ th:nth-child(4), td:nth-child(4) {
     width: 15%;
 }
 
-th:nth-child(5), td:nth-child(5) { /* Completion Date */
+th:nth-child(5), td:nth-child(5) {
     width: 15%;
 }
 
-th:nth-child(6), td:nth-child(6) { /* Actions */
+th:nth-child(6), td:nth-child(6) {
     width: 10%;
 }
 
-/* Form Modal Styling */
 #animeFormContainer {
     width: 600px;
     padding: 20px;
@@ -86,14 +81,12 @@ th:nth-child(6), td:nth-child(6) { /* Actions */
     border-radius: 10px;
 }
 
-/* Title Align to Left */
 #animeFormContainer h3 {
     text-align: left;
     margin-bottom: 15px;
-    color: #007a7a; /* Darker Aqua Blue */
+    color: #080f4a;
 }
 
-/* Form Row: label + input */
 .form-row {
     display: flex;
     align-items: center;
@@ -101,17 +94,15 @@ th:nth-child(6), td:nth-child(6) { /* Actions */
 }
 
 .edit-link {
-    color: #1400a9; /* Aqua Blue color */
+    color: #1400a9; 
     cursor: pointer;
 }
 
-/* Hover effect for the Edit link */
 .edit-link:hover {
-    color: #005ad8; /* Darker Aqua Blue on hover */
-    text-decoration: none; /* Remove underline on hover for a clean look */
+    color: #005ad8; 
+    text-decoration: none; 
 }
 
-/* Label Styles */
 label {
     font-size: 14px;
     font-weight: bold;
@@ -119,7 +110,6 @@ label {
     text-align: left;
 }
 
-/* Input Styles */
 input[type="text"], input[type="number"], input[type="date"], select {
     width: 65%;
     padding: 8px;
@@ -127,22 +117,17 @@ input[type="text"], input[type="number"], input[type="date"], select {
     margin-left: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f4f7f7; /* Light aqua background for inputs */
+    background-color: #f4f7f7; 
 }
 
-/* Smaller width for Status Dropdown */
 #status {
     width: 35%;
 }
 
-/* Smaller Episodes Watched input */
 input[type="number"] {
     width: 80px;
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
 }
 
-/* Button Styles inside Form */
 #submitBtn, #deleteBtn {
     padding: 10px 20px;
     font-size: 16px;
@@ -152,7 +137,7 @@ input[type="number"] {
     cursor: pointer;
     width: 100%;
     margin-top: 10px;
-    border-radius: 5px; /* Rounded button edges */
+    border-radius: 5px;
 }
 
 #deleteBtn {
@@ -160,7 +145,7 @@ input[type="number"] {
 }
 
 #submitBtn:hover, #deleteBtn:hover {
-    background-color: #111c7e;; /* Darker shade on hover */
+    background-color: #111c7e;
 }
 
 #closeModalBtn {
@@ -170,7 +155,6 @@ input[type="number"] {
     cursor: pointer;
 }
 
-/* Hidden Class */
 .hidden {
     display: none;
 }
