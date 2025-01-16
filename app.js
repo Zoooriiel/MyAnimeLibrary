@@ -120,8 +120,8 @@ submitBtn.addEventListener("click", (event) => {
     toggleModal();
 
     document.getElementById("title").value = ""; 
-    document.getElementById("episodes").value = ""; 
-    document.getElementById("status").value = ""; 
+    document.getElementById("episodes").value = "0"; 
+    document.getElementById("status").value = "Watching"; 
     document.getElementById("dateOfCompletion").value = "";
 
 })
